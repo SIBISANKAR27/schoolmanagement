@@ -27,7 +27,7 @@
 			<li><a href="">Home</a></li>
 			<li><a href="">Contact</a></li>
 			<li><a href="">Admission</a></li>
-			<li><a href="sighnup.php" class="btn btn-success">SighnUp</a></li>
+			<li><a href="./sighnup.php" class="btn btn-success">SighnUp</a></li>
 		</ul>
 	</nav>
 
