@@ -62,3 +62,18 @@ $title = "Login";
         </div>
     </section>
 </form>
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "school";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email=$_REQUEST['email'];
+    $password=$_REQUEST['password'];
+    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+}
+?>
